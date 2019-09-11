@@ -2,7 +2,7 @@
 Performs Locality-Sensitive Hashing on images after computing their feature vectors using a feature detection algorithm like BRIEF or SIFT. Stores the result in an LSHash object using Redis. When querying a new image, a feature detection algorithm is run on it and after performing a similarity search, the closest matching image from the dataset is returned.
 
 # Setup Instructions
-Install the lshash and future libraries. (You may have to go to the directory the library is installed in and run 'python setup.py install'
+Install the lshash and future libraries. You may have to go to the directory the library is installed in and run 'python setup.py install'
 
 Modify the path in the index.py and query.py files by replacing the predefined path in sys.path.insert with the path in which lshash is installed on your machine.
 
